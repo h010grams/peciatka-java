@@ -1,8 +1,8 @@
-# Pečiatka Stamps API — Java / Spring Boot
+# Stálka Stamps API — Java / Spring Boot
 
 [![CI](https://github.com/h010grams/peciatka-java/actions/workflows/ci.yml/badge.svg)](https://github.com/h010grams/peciatka-java/actions/workflows/ci.yml)
 
-The core of [Pečiatka](https://github.com/h010grams/peciatka) — a digital loyalty card for small beauty salons — re-implemented in **Java 21 and Spring Boot 4**.
+The core of [Stálka](https://github.com/h010grams/stalka) (formerly Pečiatka) — a digital loyalty card for small beauty salons — re-implemented in **Java 21 and Spring Boot 4**.
 
 The original product is written in TypeScript (Node.js + React). This project ports its central business logic to the Java ecosystem: the same rules, the same edge cases, the same concurrency guarantees — so the two implementations can be compared side by side.
 
@@ -70,7 +70,7 @@ curl -s -X POST localhost:8080/api/programs -H 'Content-Type: application/json' 
 
 ## Scope
 
-This is a focused port of the domain, not the full product: no authentication, multi-tenancy or Wallet integrations — those live in the [TypeScript version](https://github.com/h010grams/peciatka). The schema is created by Hibernate (`ddl-auto=update`); a production setup would use Flyway migrations.
+This is a focused port of the domain, not the full product: no authentication, multi-tenancy or Wallet integrations — those live in the [TypeScript version](https://github.com/h010grams/stalka). The schema is created by Hibernate (`ddl-auto=update`); a production setup would use Flyway migrations.
 
 ## Author
 
